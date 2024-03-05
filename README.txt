@@ -3,11 +3,12 @@ How to use the code
 running Gui_psoas.m the user gets a GUI. 
 
 First step:
-By clicking the button "load data" the user can select 
-the folder containing the DICOM images of the psoas.
+By clicking the button "Folder" the user can select 
+the folder containing the DICOM images of the psoas
+(only the slices containing the psoas).
 
 Second step:
-By clicking the button "centers" the image appears.
+By clicking the button "Centers" the image appears.
 It should be an image containing a central section of the psoas.
 
 Third step:
@@ -20,7 +21,7 @@ Fourth step:
 Click first on the center of the psoas
 in the left part of the image and then on 
 the center of the psoas in the right part of the 
-image.
+image. The user can now close the GUI.
 
 The GUI then creates a folder, with the same name of
 the one loaded by the user and suffix "_res",
@@ -32,10 +33,12 @@ running one of the following commands
 ac_classical(folder_data)
 ac_gmfd_1ord(folder_data)
 ac_gmfd_2ord(folder_data)
-where folder_data is the folder containing the DICOM images.
+where folder_data is the folder containing the DICOM images,
+e.g., folder_data = "/psoas/CT_001".
 
 The parameters sigma and p are asked to be inserted by the user 
 using the command window.
+The user could use, for instance, sigma=1, p=2.
 
 The results are all saved in the folder with suffix "_res" 
 created by the GUI.
