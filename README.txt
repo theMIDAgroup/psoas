@@ -15,13 +15,14 @@ Third step:
 The user should click in the midpoint between the two psoas.
 Then a prompt asks the user to select the image 
 number where to identify the psoas centers.
-Insert the slice number.
+Insert the slice number (e.g., 20).
 
 Fourth step:
 Click first on the center of the psoas
 in the left part of the image and then on 
 the center of the psoas in the right part of the 
-image. The user can now close the GUI.
+image. The user can now close the GUI by clicking
+the button "Close".
 
 The GUI then creates a folder, with the same name of
 the one loaded by the user and suffix "_res",
