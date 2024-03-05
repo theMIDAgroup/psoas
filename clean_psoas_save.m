@@ -80,7 +80,7 @@ for is = 1 : number_of_file
         
         E_s=E_cl_app2(:,1:xc-x1+1,:);
         E_d=E_cl_app2(:,xc-x1+1:size(I_tot,2),:);
-        while sum(sum(E_s(:,:,it_slice_new))) == 0 || sum(sum(E_d(:,:,it_slice_new))) == 0
+        while (sum(sum(E_s(:,:,it_slice_new))) == 0 || sum(sum(E_d(:,:,it_slice_new))) == 0)
             it_slice_new = it_slice_new +1;
         end
         CC = bwconncomp(E_s(:,:,it_slice_new),4);
